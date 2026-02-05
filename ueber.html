@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über — Stille Farbe</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'off-white': '#F8F7F4',
+                        'soft-gray': '#E8E6E1',
+                        'deep-charcoal': '#1A1A1A',
+                        'german-blue': '#003366',
+                        'earth-ochre': '#B87333'
+                    },
+                    fontFamily: {
+                        'founders': ['"Founders Grotesk"', 'system-ui', 'sans-serif'],
+                        'suisse': ['"Suisse"', '"Helvetica Neue"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-off-white text-deep-charcoal font-suisse">
+    <site-nav></site-nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-[70vh] flex items-end pb-16 pt-32 px-6 md:px-12 lg:px-24 relative">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 w-full">
+                <div class="order-2 lg:order-1">
+                    <p class="text-sm tracking-[0.2em] uppercase text-german-blue mb-4">Künstlerbiografie</p>
+                    <h1 class="font-founders text-5xl md:text-6xl lg:text-7xl font-light mb-8">Markus Lüpertz</h1>
+<p class="text-lg md:text-xl text-deep-charcoal/80 leading-relaxed font-light max-w-xl mb-8">
+                        Geboren 1987 in München. Lebt und arbeitet in Berlin. Die abstrakte Malerei von Markus Lüpertz erforscht die physische und emotionale Dichte von Farbe als Träger von Erinnerung.
+</p>
+                    <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-german-blue text-white text-sm tracking-wider uppercase hover:bg-deep-charcoal transition-colors duration-300">
+                        <i data-feather="download" class="w-4 h-4"></i>
+                        Lebenslauf PDF
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="aspect-[4/5] bg-soft-gray overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" 
+                             alt="Markus Lüpertz im Atelier" 
+class="w-full h-full object-cover"
+                             loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Statement -->
+        <section class="py-24 px-6 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-4xl">
+                <p class="text-sm tracking-[0.2em] uppercase text-german-blue mb-8">Künstlerstatement</p>
+                <blockquote class="font-founders text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed text-deep-charcoal/90 mb-12">
+                    „Die Leinwand ist ein Feld der Möglichkeit. Jede Schicht Farbe reagiert auf die vorherige, schafft Resonanzräume zwischen Sichtbarem und Erinnertem."
+                </blockquote>
+                <div class="prose prose-lg max-w-none text-deep-charcoal/80 font-light leading-relaxed space-y-6">
+                    <p>
+                        Meine Arbeit entsteht im Dialog zwischen Kontrolle und Zufall. Die physische Erfahrung des Malens — das Gewicht des Pinsels, die Konsistenz der Farbe, der Widerstand der Leinwand — ist untrennbar mit dem entstehenden Bild verbunden. Diese Haptik der Malerei interessiert mich mehr als jede vorher festgelegte Idee.
+                    </p>
+                    <p>
+                        Die Serie „Nebelstücke" bewegt sich an der Grenze zwischen Erkennen und Verschwimmen. Wie Erinnerungen, die im Moment des Abrufens bereits verändern, verändern sich diese Bilder bei verschiedener Distanz und Belichtung. Sie fordern eine langsame Betrachtung — eine Haltung, die unserer beschleunigten Wahrnehmung entgegensteht.
+                    </p>
+                    <p>
+                        Die Farbpalette ist reduziert: Ocker, Umbra, gebranntes Siena, dazu Blaugrau und das vibrierende Weiß der ungrundiellen Leinwand. Diese Erdtöne verbinden meine Arbeit mit einer langen Tradition der deutschen Malerei, von Friedrich bis Richter, auch wenn mein Ansatz vollkommen anders ist.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="py-24 px-6 md:px-12 lg:px-24">
+            <div class="max-w-4xl">
+                <div class="flex justify-between items-end mb-16">
+                    <p class="text-sm tracking-[0.2em] uppercase text-german-blue">Werdegang</p>
+                    <div class="flex gap-4 text-sm">
+                        <button class="text-german-blue border-b border-german-blue">Alle</button>
+                        <button class="text-deep-charcoal/50 hover:text-german-blue transition-colors">Ausbildung</button>
+                        <button class="text-deep-charcoal/50 hover:text-german-blue transition-colors">Ausstellungen</button>
+                    </div>
+                </div>
+                
+                <div class="space-y-0 border-l border-soft-gray ml-4">
+                    <!-- 2024 -->
+                    <div class="timeline-item pl-8 pb-12 relative">
+                        <span class="absolute left-0 top-0 w-2 h-2 bg-german-blue rounded-full -translate-x-1/2"></span>
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                            <span class="font-founders text-3xl font-light text-german-blue w-24">2025</span>
+<div>
+                                <h3 class="font-founders text-xl font-light mb-2">Nebelstücke — Einzelausstellung</h3>
+                                <p class="text-deep-charcoal/70 font-light">Galerie Thomas Schulte, Berlin</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2023 -->
+                    <div class="timeline-item pl-8 pb-12 relative">
+                        <span class="absolute left-0 top-0 w-2 h-2 bg-deep-charcoal/30 rounded-full -translate-x-1/2"></span>
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                            <span class="font-founders text-3xl font-light text-deep-charcoal/50 w-24">2023</span>
+                            <div>
+                                <h3 class="font-founders text-xl font-light mb-2">Kunstpreis der Stadt Leipzig</h3>
+                                <p class="text-deep-charcoal/70 font-light">1. Preis für die Serie „Grenzland"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item pl-8 pb-12 relative">
+                        <span class="absolute left-0 top-0 w-2 h-2 bg-deep-charcoal/30 rounded-full -translate-x-1/2"></span>
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                            <span class="font-founders text-3xl font-light text-transparent w-24">—</span>
+                            <div>
+                                <h3 class="font-founders text-xl font-light mb-2">Grenzland — Einzelausstellung</h3>
+                                <p class="text-deep-charcoal/70 font-light">Kunsthalle Mannheim</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2021 -->
+                    <div class="timeline-item pl-8 pb-12 relative">
+                        <span class="absolute left-0 top-0 w-2 h-2 bg-deep-charcoal/30 rounded-full -translate-x-1/2"></span>
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                            <span class="font-founders text-3xl font-light text-deep-charcoal/50 w-24">2021</span>
+                            <div>
+                                <h3 class="font-founders text-xl font-light mb-2">Meisterschülerin</h3>
+                                <p class="text-deep-charcoal/70 font-light">Prof. Neo Rauch, Hochschule für Grafik und Buchkunst Leipzig</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2019 -->
+                    <div class="timeline-item pl-8 pb-12 relative">
+                        <span class="absolute left-0 top-0 w-2 h-2 bg-deep-charcoal/30 rounded-full -translate-x-1/2"></span>
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                            <span class="font-founders text-3xl font-light text-deep-charcoal/50 w-24">2019</span>
+                            <div>
+                                <h3 class="font-founders text-xl font-light mb-2">Diplom mit Auszeichnung</h3>
+                                <p class="text-deep-charcoal/70 font-light">Akademie der Bildenden Künste München, Klasse Prof. Günther Förg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atelier -->
+        <section class="py-24 px-6 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-6xl">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-24">
+                    <div>
+                        <p class="text-sm tracking-[0.2em] uppercase text-german-blue mb-4">Atelier</p>
+                        <h2 class="font-founders text-4xl md:text-5xl font-light mb-8">Berlin-Prenzlauer Berg</h2>
+                        <p class="text-deep-charcoal/80 font-light leading-relaxed mb-8">
+                            Mein Atelier befindet sich in einem ehemaligen Industriegebäude aus den 1920er Jahren. Die hohen Decken und das Nordlicht schaffen ideale Bedingungen für die Arbeit. Hier entstehen alle Gemälde der letzten Jahre — von ersten Skizzen bis zur letzten Farbschicht.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 text-sm">
+                            <div>
+                                <p class="text-deep-charcoal/50 mb-1">Adresse</p>
+                                <p class="font-medium">Wörther Straße 12<br>10405 Berlin</p>
+                            </div>
+                            <div>
+                                <p class="text-deep-charcoal/50 mb-1">Besichtigung</p>
+                                <p class="font-medium">Nach Vereinbarung</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="aspect-square bg-soft-gray overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80" 
+                                 alt="Atelier Detail 1" 
+                                 class="w-full h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="aspect-square bg-soft-gray overflow-hidden mt-8">
+                            <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&q=80" 
+                                 alt="Atelier Detail 2" 
+                                 class="w-full h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+
+    <script src="components/nav.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize timeline animations
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof initTimeline === 'function') {
+                initTimeline();
+            }
+        });
+    </script>
+    <script>feather.replace();</script>
+</body>
+</html>

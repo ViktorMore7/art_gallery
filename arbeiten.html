@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbeiten — Stille Farbe</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'off-white': '#F8F7F4',
+                        'soft-gray': '#E8E6E1',
+                        'deep-charcoal': '#1A1A1A',
+                        'german-blue': '#003366',
+                        'earth-ochre': '#B87333'
+                    },
+                    fontFamily: {
+                        'founders': ['"Founders Grotesk"', 'system-ui', 'sans-serif'],
+                        'suisse': ['"Suisse"', '"Helvetica Neue"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-off-white text-deep-charcoal font-suisse">
+    <site-nav></site-nav>
+
+    <main class="pt-32 pb-24 px-6 md:px-12 lg:px-24">
+        <header class="mb-16">
+            <p class="text-sm tracking-[0.2em] uppercase text-german-blue mb-4">Werkverzeichnis</p>
+            <h1 class="font-founders text-5xl md:text-6xl lg:text-7xl font-light mb-8">Arbeiten</h1>
+            
+            <!-- Filters -->
+            <div class="flex flex-wrap gap-3 mb-8">
+                <button data-filter="all" class="px-4 py-2 text-sm tracking-wider uppercase bg-german-blue text-white">Alle</button>
+                <button data-filter="nebelstuecke" class="px-4 py-2 text-sm tracking-wider uppercase border border-deep-charcoal/20 hover:border-german-blue hover:text-german-blue transition-colors">Nebelstücke</button>
+                <button data-filter="grenzland" class="px-4 py-2 text-sm tracking-wider uppercase border border-deep-charcoal/20 hover:border-german-blue hover:text-german-blue transition-colors">Grenzland</button>
+                <button data-filter="archiv" class="px-4 py-2 text-sm tracking-wider uppercase border border-deep-charcoal/20 hover:border-german-blue hover:text-german-blue transition-colors">Archiv der Stille</button>
+                <button data-filter="atelier" class="px-4 py-2 text-sm tracking-wider uppercase border border-deep-charcoal/20 hover:border-german-blue hover:text-german-blue transition-colors">Im Atelier</button>
+                <button data-filter="available" class="px-4 py-2 text-sm tracking-wider uppercase border border-deep-charcoal/20 hover:border-german-blue hover:text-german-blue transition-colors">Verfügbar</button>
+            </div>
+<div class="flex justify-between items-center text-sm text-deep-charcoal/60">
+                <span>48 Arbeiten, 2019—2025</span>
+<div class="flex gap-4">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" id="show-dimensions" class="accent-german-blue">
+                        <span>Maße anzeigen</span>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <!-- Masonry Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Work 001 -->
+            <article data-category="nebelstuecke available" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1600&q=80', 'Nebelstück VII', {year: '2025', medium: 'Öl auf Leinwand', dimensions: '180 × 140 cm'})">
+<div class="aspect-[4/5] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&q=80" 
+                         alt="Nebelstück VII" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                    <span class="absolute top-4 right-4 px-2 py-1 bg-white/90 text-xs tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Verfügbar</span>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-25-007</p>
+<h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Nebelstück VII</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">180 × 140 cm</span>
+                </div>
+            </article>
+
+            <!-- Work 002 -->
+            <article data-category="nebelstuecke" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1549887534-1541e9326642?w=1600&q=80', 'Nebelstück IV', {year: '2023', medium: 'Öl auf Leinwand', dimensions: '200 × 160 cm'})">
+                <div class="aspect-[3/4] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=800&q=80" 
+                         alt="Nebelstück IV" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-23-004</p>
+                        <h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Nebelstück IV</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">200 × 160 cm</span>
+                </div>
+            </article>
+
+            <!-- Work 003 -->
+            <article data-category="grenzland available" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1513519245088-0e12902e35dc?w=1600&q=80', 'Grenzland III', {year: '2023', medium: 'Acryl & Pigment auf Leinwand', dimensions: '150 × 120 cm'})">
+                <div class="aspect-[5/4] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35dc?w=800&q=80" 
+                         alt="Grenzland III" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                    <span class="absolute top-4 right-4 px-2 py-1 bg-white/90 text-xs tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Verfügbar</span>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-23-015</p>
+                        <h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Grenzland III</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">150 × 120 cm</span>
+                </div>
+            </article>
+
+            <!-- Work 004 -->
+            <article data-category="archiv" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1600&q=80', 'Archiv der Stille XII', {year: '2022', medium: 'Mixed Media auf Holz', dimensions: '60 × 80 cm'})">
+                <div class="aspect-[4/3] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80" 
+                         alt="Archiv der Stille XII" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-22-012</p>
+                        <h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Archiv der Stille XII</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">60 × 80 cm</span>
+                </div>
+            </article>
+
+            <!-- Work 005 -->
+            <article data-category="nebelstuecke available" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=1600&q=80', 'Nebelstück II', {year: '2023', medium: 'Öl auf Leinwand', dimensions: '180 × 140 cm'})">
+                <div class="aspect-[4/5] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800&q=80" 
+                         alt="Nebelstück II" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                    <span class="absolute top-4 right-4 px-2 py-1 bg-white/90 text-xs tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Verfügbar</span>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-23-002</p>
+                        <h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Nebelstück II</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">180 × 140 cm</span>
+                </div>
+            </article>
+            <!-- Work 006 -->
+            <article data-category="grenzland" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=1600&q=80', 'Grenzland VI', {year: '2022', medium: 'Acryl & Pigment auf Leinwand', dimensions: '120 × 100 cm'})">
+                <div class="aspect-[6/5] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=800&q=80" 
+                         alt="Grenzland VI" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-22-018</p>
+                        <h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Grenzland VI</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">120 × 100 cm</span>
+                </div>
+            </article>
+
+            <!-- Work 007 - Atelier Series -->
+            <article data-category="atelier available" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1600&q=80', 'Atelierstudie I', {year: '2025', medium: 'Öl auf Papier', dimensions: '42 × 30 cm'})">
+<div class="aspect-[4/3] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80" 
+                         alt="Atelierstudie I" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                    <span class="absolute top-4 right-4 px-2 py-1 bg-white/90 text-xs tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Verfügbar</span>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-25-101</p>
+<h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Atelierstudie I</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">42 × 30 cm</span>
+                </div>
+            </article>
+
+            <!-- Work 008 - Atelier Series -->
+            <article data-category="atelier" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=1600&q=80', 'Atelierstudie II', {year: '2025', medium: 'Öl auf Papier', dimensions: '42 × 30 cm'})">
+<div class="aspect-[4/3] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800&q=80" 
+                         alt="Atelierstudie II" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-25-102</p>
+<h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Atelierstudie II</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">42 × 30 cm</span>
+                </div>
+            </article>
+
+            <!-- Work 009 - Atelier Series -->
+            <article data-category="atelier available" class="group cursor-pointer transition-opacity duration-300" onclick="StilleFarbe.openLightbox('https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=1600&q=80', 'Atelierarbeit III', {year: '2025', medium: 'Acryl auf Leinwand', dimensions: '100 × 80 cm'})">
+<div class="aspect-[5/4] bg-soft-gray overflow-hidden mb-4 relative">
+                    <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=800&q=80" 
+                         alt="Atelierarbeit III" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-german-blue/0 group-hover:bg-german-blue/10 transition-colors duration-300"></div>
+                    <span class="absolute top-4 right-4 px-2 py-1 bg-white/90 text-xs tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">Verfügbar</span>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs tracking-[0.15em] uppercase text-german-blue mb-1">EB-25-103</p>
+<h3 class="font-founders text-lg font-light group-hover:text-german-blue transition-colors">Atelierarbeit III</h3>
+                    </div>
+                    <span class="text-sm text-deep-charcoal/50 dimension-label hidden">100 × 80 cm</span>
+                </div>
+            </article>
+        </div>
+</main>
+
+    <site-footer></site-footer>
+
+    <script src="components/nav.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize filters
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dimension toggle
+            const dimToggle = document.getElementById('show-dimensions');
+            const dimLabels = document.querySelectorAll('.dimension-label');
+            
+            dimToggle.addEventListener('change', () => {
+                dimLabels.forEach(label => label.classList.toggle('hidden'));
+            });
+            
+            // Initialize filters from script.js
+            if (typeof initFilters === 'function') {
+                initFilters();
+            }
+            
+            // Check URL for filter parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const filterParam = urlParams.get('filter');
+            if (filterParam) {
+                const filterBtn = document.querySelector(`[data-filter="${filterParam}"]`);
+                if (filterBtn) {
+                    filterBtn.click();
+                }
+            }
+        });
+    </script>
+<script>feather.replace();</script>
+</body>
+</html>
